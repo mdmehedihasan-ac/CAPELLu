@@ -10,7 +10,7 @@ const quickPoints = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden px-3 pb-8 pt-28 md:px-5 md:pb-10 md:pt-36 lg:pt-44">
+    <section className="relative overflow-hidden px-3 pb-6 pt-16 md:px-5 md:pb-10 md:pt-36 lg:pt-44">
       <div className="container-shell">
         <div className="relative overflow-hidden rounded-[2.25rem] bg-sage-950 text-white shadow-[0_50px_120px_-60px_rgba(26,31,22,0.85)]">
           <div className="absolute inset-0">
@@ -23,14 +23,14 @@ export default function Hero() {
             <div className="absolute left-0 top-0 h-64 w-64 rounded-full bg-gold-400/20 blur-3xl" />
           </div>
 
-          <div className="relative z-10 grid gap-10 px-6 py-10 md:px-10 md:py-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 lg:px-14 lg:py-16">
-            <div className="flex min-h-[540px] flex-col justify-between">
+          <div className="relative z-10 grid gap-6 px-5 py-8 md:gap-10 md:px-10 md:py-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 lg:px-14 lg:py-16">
+            <div className="flex min-h-0 flex-col justify-between md:min-h-[540px]">
               <div>
                 <motion.div
                   initial={{ opacity: 0, y: 18 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="mb-8 flex flex-wrap gap-3"
+                  className="mb-5 flex flex-wrap gap-2 md:mb-8 md:gap-3"
                 >
                   <span className="info-pill border-white/20 bg-white/10 text-white backdrop-blur-sm">
                     Atelier di hair styling a Torino
@@ -44,7 +44,7 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 24 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.05 }}
-                  className="font-display text-5xl font-medium tracking-[-0.04em] leading-[0.92] text-white md:text-7xl xl:text-[88px]"
+                  className="font-display text-[32px] font-medium tracking-[-0.04em] leading-[0.94] text-white md:text-7xl xl:text-[88px]"
                 >
                   Il salone a Torino
                   <br />
@@ -55,7 +55,7 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 24 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.15 }}
-                  className="mt-6 max-w-2xl font-sans text-base font-light leading-8 text-white/76 md:text-lg"
+                  className="mt-4 max-w-2xl font-sans text-[15px] font-light leading-7 text-white/76 md:mt-6 md:text-lg md:leading-8"
                 >
                   Capelli Lounge Torino è un atelier elegante e contemporaneo dove taglio,
                   colore e trattamenti vengono costruiti su misura, con prodotti di alta qualità
@@ -66,13 +66,13 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 24 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.25 }}
-                  className="mt-8 flex flex-col gap-4 sm:flex-row"
+                  className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-8 md:gap-4"
                 >
                   <a
                     href="https://www.treatwell.it/salone/capelli-snc/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-sage-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-cream-100"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.08em] text-sage-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-cream-100 active:scale-[0.97]"
                   >
                     <Calendar className="h-4 w-4" />
                     Prenota online
@@ -81,7 +81,7 @@ export default function Hero() {
                     href="https://wa.me/393513346103"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/16"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.08em] text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/16 active:scale-[0.97]"
                   >
                     <MessageCircle className="h-4 w-4" />
                     Scrivici su WhatsApp
@@ -99,7 +99,7 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 24 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.35 }}
-                  className="mt-8 grid gap-3 sm:grid-cols-3"
+                  className="mt-6 hidden gap-3 sm:grid sm:grid-cols-3 md:mt-8"
                 >
                   {quickPoints.map((point) => (
                     <div key={point} className="rounded-2xl border border-white/15 bg-white/8 px-4 py-4 text-sm font-light leading-6 text-white/82 backdrop-blur-sm">
@@ -113,7 +113,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="mt-10 grid gap-4 sm:grid-cols-3"
+                className="mt-6 grid grid-cols-3 gap-2.5 md:mt-10 md:gap-4"
               >
                 <div className="metric-card border-white/15 bg-white/10 text-white backdrop-blur-sm">
                   <div className="flex items-center gap-1 text-gold-400">
@@ -121,17 +121,17 @@ export default function Hero() {
                       <Star key={index} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
-                  <p className="mt-3 font-display text-3xl">5.0</p>
-                  <p className="mt-1 text-sm font-light text-white/70">Recensioni Google eccellenti</p>
+                  <p className="mt-2 font-display text-2xl md:mt-3 md:text-3xl">5.0</p>
+                  <p className="mt-0.5 text-[11px] font-light leading-snug text-white/70 md:mt-1 md:text-sm">Google</p>
                 </div>
                 <div className="metric-card border-white/15 bg-white/10 text-white backdrop-blur-sm">
-                  <p className="font-display text-3xl">15+</p>
-                  <p className="mt-1 text-sm font-light text-white/70">Anni di esperienza nel salone</p>
+                  <p className="font-display text-2xl md:text-3xl">15+</p>
+                  <p className="mt-0.5 text-[11px] font-light leading-snug text-white/70 md:mt-1 md:text-sm">Anni</p>
                 </div>
                 <div className="metric-card border-white/15 bg-white/10 text-white backdrop-blur-sm">
-                  <MapPin className="h-5 w-5 text-gold-400" />
-                  <p className="mt-3 text-sm font-medium uppercase tracking-[0.08em]">Torino</p>
-                  <p className="mt-1 text-sm font-light text-white/70">Zona residenziale, rilassata e riservata</p>
+                  <MapPin className="h-4 w-4 text-gold-400 md:h-5 md:w-5" />
+                  <p className="mt-2 text-xs font-medium uppercase tracking-[0.08em] md:mt-3 md:text-sm">Torino</p>
+                  <p className="mt-0.5 text-[11px] font-light leading-snug text-white/70 md:mt-1 md:text-sm">Zona riservata</p>
                 </div>
               </motion.div>
             </div>
@@ -140,14 +140,14 @@ export default function Hero() {
               initial={{ opacity: 0, x: 24 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="flex items-end lg:justify-end"
+              className="hidden items-end lg:flex lg:justify-end"
             >
               <div className="w-full max-w-[430px] rounded-[2rem] border border-white/15 bg-white/10 p-5 backdrop-blur-md">
                 <div className="overflow-hidden rounded-[1.5rem]">
                   <img
                     src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=900&q=80"
                     alt="Interno del salone"
-                    className="h-[340px] w-full object-cover"
+                    className="h-[320px] w-full object-cover"
                   />
                 </div>
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
